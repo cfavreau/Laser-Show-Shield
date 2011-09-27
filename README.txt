@@ -4,6 +4,9 @@ By Christopher Favreau
 cfavreau@fab-favreau.com
 Last revised on August 17, 2011
 Current Hardware Version: 3B
+Project Web Sites:
+http://www.fab-favreau.com/olsd.html
+https://github.com/cfavreau/Laser-Show-Shield
 
 All included materials are copyright Christopher Favreau 2010, 2011
 
