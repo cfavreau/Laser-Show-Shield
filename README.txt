@@ -5,10 +5,10 @@ cfavreau@fab-favreau.com
 Last revised on August 17, 2011
 Current Hardware Version: 3B
 Project Web Sites:
-http://www.fab-favreau.com/olsd.html
+http://www.fab-favreau.com/index.php/Main/OpenLaserShowDAC
 https://github.com/cfavreau/Laser-Show-Shield
 
-All included materials are copyright Christopher Favreau 2010, 2011
+All included materials are copyright Christopher Favreau 2010 to 2017
 
 This work is licensed under the Creative Commons Attribution 3.0 Unported License.
 
