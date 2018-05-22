@@ -1,0 +1,24 @@
+"Quantity","Name","Value","Digi-Key","Description","Parts","Cost Per Unit","Total Cost"
+7,"Capacitor 0603","0.1uF","445-1326-1-ND","Bypass CAPs -> 0.1uF 16V 0603 package","C4, C5, C6, C7, C8, C9, C10","$0.07","$0.49"
+2,"Resistor 0603","1K","P1.0KGCT-ND","1k  1/10W 0603 Digikey 5%","R34, R4","$0.02","$0.04"
+3,"Capacitor Leaded","4.7uF","ECE-A1EKA4R7","4.7 uF Electrolytic Capacitor 25V 20%","C1, C2, C3","$0.23","$0.69"
+14,"Resistor 0603","10K","P10.0KHCT-ND","10k 1/10W 0603 Digikey 1%","R5, R6, R14, R15, R22, R23, R26, R27, R28, R29, R30, R31, R32, R33","$0.04","$0.56"
+,,,,,,,
+12,"Resistor 0603","20K","P20.0KHCT-ND","20k 1/10W 0603 Digikey 1%","R1, R2, R3, R8, R9, R10, R11, R17, R18, R19, R20, R25","$0.04","$0.48"
+1,"Male Header","1x36 0.1""","WM6536-ND","Shield Header - 1 x 36 Male Header Gold Plated .24"" mating length","U$1, U$2, U$3, U$4","$1.50","$1.50"
+1,"DB25 Female ILDA Conn","DB25","L77SDB25S","CONN D-SUB RCPT 25POS GOLD FLASH","X1","$1.41","$1.41"
+1,"12 Bit SPI DAC","MCP4922","MCP4922T-E/SLCT-ND","12 Bit Dual DAC Microchip - SPI - SOIC","U1","$3.11","$3.11"
+1,"SPST Push Button Switch","SPST","450-1759-1-ND","SWITCH TACT MINI 6X6MM SMD","S1","$0.24","$0.24"
+1,"Dual Opamp","TL082D","497-2214-1-ND","Dual J-Fet Opamp SOIC","IC4","$1.08","$1.08"
+2,"Quad Opamp","TL084","497-2217-1-ND","Quad J-Fet Opamp SOIC","IC2, IC3","$1.04","$2.08"
+1,"5V to +-12V DC to DC","VASD1-S5-D12-SIP","102-1340-ND","CONVERTER DC/DC +/-12V OUT +5V IN 1W","IC1","$5.58","$5.58"
+1,"Green LED 0603",,"475-2709-1-ND","LED SMARTLED GREEN 570NM 0603 @ 2mA = 2 mcd w/ 1.7V Forward Voltage","LED1","$0.16","$0.16"
+1,"16V 2200uF","ECA-1CM222","P5143-ND","16V 2200uF Radial Lead Through Hole Cap","C12","$0.74","$0.74"
+7,"Resistor 0603","75R","P75GCT-ND","75R 1/10W 0603 Digikey 5%","R7,R12,R13,R16,R21,R24,R35","$0.02","$0.14"
+,,,,,,,"$0.00"
+"Total Cost:",,"$18.30",,,"Total Cost:",,"$18.30"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

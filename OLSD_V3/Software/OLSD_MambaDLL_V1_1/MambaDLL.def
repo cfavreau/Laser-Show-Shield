@@ -1,0 +1,19 @@
+; MambaDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "OLSD.mld"
+DESCRIPTION  'OLSD MambaDLL Windows Dynamic Link Library'
+
+EXPORTS
+   ; Explicit exports
+   MLRegisterDriver
+   MLDevicePresent
+   MLGetName
+   MLKind
+   MLInitDevice
+   MLInitShow
+   MLDraw
+   MLHaltShow
+   MLHalt
+   MLParams
+   MLGetError
+   MLNumDevices

@@ -1,0 +1,124 @@
+
+Drivers are simply Windows DLLs. If you want to write your own driver, you will have to
+implement and export the following functions (Delphi syntax):
+
+
+=================================================================================================================
+function MLRegisterDriver(b: PChar): word stdcall;
+
+This function has to copy the characters MLDevice into the buffer b. This is to make sure the
+DLL is a valid driver. The function can return a number, which will then be passed to as
+parameter h in the functions below (in case the hardware driver supports multiple clients, and
+has to keep track of them).
+
+
+=================================================================================================================
+function MLDevicePresent: boolean; stdcall;
+
+This function should return true if the device is present (or if there is no way to determine it).
+
+
+=================================================================================================================
+function MLKind: word; stdcall;
+
+Returns 1 for a frame oriented device, 2 for a point oriented device, 4 for an animation
+oriented device. (For the different devices see MLDraw.) If the function is not present a frame
+oriented device will be assumed.
+Mamba calls these functions on program start, so it can list all output devices that are
+available.
+The following functions are used to do output to the device. The parameter h is the above
+mentioned return value from MLRegisterDriver, c is the channel number (in case the
+hardware can support multiple output channels, mamba always uses channel 0).
+
+
+=================================================================================================================
+function MLGetName(n: pchar): boolean; stdcall;
+
+When called the driver should copy a name (20 chars max) to n
+
+
+=================================================================================================================
+function MLInitDevice(h: word): boolean; stdcall;
+
+Called once when the driver is selected.
+
+
+=================================================================================================================
+function MLInitShow(h, c: word): boolean; stdcall;
+
+Called immediately before output starts
+
+
+
+=================================================================================================================
+function MLDraw(h, c: word; d: PChar; n: integer): boolean; stdcall;
+
+For a frame oriented device (Riya PCI Pro for example) this function is called for each frame.
+
+D is a pointer to an array with n points
+Point= packed record
+   x,y,z: word;
+   r,g,b: byte;
+   reserved1, reserved2, reserved3: byte;
+   intensity, reserved4, repeatpoint: byte;
+end;
+
+if repeatpoint is greater than 0 it should be displayed 1+repeatpoint times.
+
+For a point oriented device (MediaLas PCI 12 for example) this function is called once for
+each point (same data format).
+
+For animation oriented devices (MediaLas HotBoard for example) there will be a call to
+MLInitShow, followed by calls to MLDraw for each frame, after the show is through
+MLHaltShow will be called, and the data can be sent to the device.
+
+
+
+=================================================================================================================
+function MLHaltShow(h, c: word): boolean; stdcall;
+
+Called when output stops.
+
+
+=================================================================================================================
+function MLHalt: boolean; stdcall;
+
+Called when the driver is unloaded
+
+
+=================================================================================================================
+function MLParams(h: word; c: word; p: PChar): boolean; stdcall;
+
+p is a pointer to a Params structure
+Params= packed record
+size: word;
+pointrate: longint;
+invertblanking: boolean;
+end;
+
+size is the size in bytes of the complete structure (right now values of 6 or 7 are used, please
+make sure you driver checks for this parameters). For a frame oriented driver this function is
+used to set the scanrate in points per second. If invertblanking is set, the driver should invert
+all intensity values (if possible). The driver should use safe default values.
+
+
+=================================================================================================================
+Using a driver with your own software
+
+If you plan to use a MediaLas driver with your own software you should at least call the
+following functions:
+
+MLDevicePresent (on startup)
+MLInitDevice (before first output)
+MLInitShow (before output starts)
+MLHaltShow (to end output)
+MLHalt (before closing program)
+
+It is highly recommended to call MLKind (if present) to check whether the device is point,
+frame, or animation oriented.
+
+When calling MLName please make sure the buffer you pass is at least 21 bytes long. When
+calling MLParams, set the size parameter correctly.
+
+A simple example driver and program (in Delphi) is available, please contact MediaLas
+technical support.

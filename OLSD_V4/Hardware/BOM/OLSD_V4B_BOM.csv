@@ -1,0 +1,26 @@
+"Quantity","Name","Value","Digi-Key","Description","Parts","Cost Per Unit","Total Cost"
+2,"Resistor 0603","1K","P1.0KGCT-ND","1k  1/10W 0603 Digikey 5%","R1, R4","$0.02","$0.04"
+7,"Resistor 0603","75R","P75GCT-ND","75R 1/10W 0603 Digikey 5%","R7,R12,R13,R16,R21,R24,R35","$0.02","$0.14"
+2,"10kx4 Resistor Array ","CRA06E08310K0FTA","CRA6E810.0KACT-ND","RES ARRAY 10K OHM 4 RES 1206 1% (0603x4)","RN9, RN10","$0.19","$0.38"
+3,"10kx4 Resistor Array","YC164-JR-0710KL","YC164J-10KTR-ND","RES ARRAY 10K OHM 8TRM 4 RES SMD 5%(0603 x 4)","RN2, RN5, RN7","$0.04","$0.12"
+5,"20kx4 Resistor Array","YC164-JR-0720KL","YC164J-20KCT-ND","RES ARRAY 20K OHM 8TRM 4 RES SMD 5% (0603 x 4)","RN1, RN3, RN4, RN6, RN8","$0.04","$0.20"
+2,"1.0 uF Capacitor 0603","1.0uF","445-1327-1-ND","1.0uF 16V 0603 package","C5, C15","$0.17","$0.34"
+3,"Capacitor Leaded","4.7uF","ECE-A1EKA4R7","4.7 uF Electrolytic Capacitor 25V 20%","C1, C2, C3","$0.23","$0.69"
+8,"Capacitor 0603","0.1uF","445-1326-1-ND","Bypass CAPs -> 0.1uF 16V 0603 package","C6, C7, C9, C10, C11, C13, C14, C15","$0.07","$0.56"
+1,"Male Header","1x36 0.1""","WM6536-ND","Shield Header - 1 x 36 Male Header Gold Plated .24"" mating length","U$1, U$2, U$3, U$4","$1.50","$1.50"
+1,"DB25 Female ILDA Conn","DB25","L77SDB25S","CONN D-SUB RCPT 25POS GOLD FLASH","X1","$1.41","$1.41"
+1,"12 Bit SPI DAC","MCP4922","MCP4922T-E/SLCT-ND","12 Bit Dual DAC Microchip - SPI - SOIC","U1","$3.11","$3.11"
+1,"SPST Push Button Switch","SPST","450-1759-1-ND","SWITCH TACT MINI 6X6MM SMD","S2","$0.24","$0.24"
+2,"Quad Opamp","TL084CD","497-3033-5-ND","Quad JFET OpAmp - SOIC Package","IC2, IC3","$0.70","$1.40"
+1,"5V to +-12V DC to DC","RB-0512D","945-1105-ND","CONV DC/DC 1W DL +/-12V OUT SIP","IC1","$6.82","$6.82"
+1,"Green LED 0603",,"475-2709-1-ND","LED SMARTLED GREEN 570NM 0603 @ 2mA = 2 mcd w/ 1.7V Forward Voltage","LED1","$0.16","$0.16"
+2,"595 Shift Register","74VHC595M","74VHC595M-ND","IC REGISTER SHIFT 8BIT 16-SOIC","IC5, IC6","$0.43","$0.86"
+1,"5.0V  Voltage Reference","MAX6105EUR+T","MAX6105EUR+TCT-ND","Maxim 5V Precision Voltage Reference","IC7","$0.78","$0.78"
+,,,,,,,
+"Total Cost:",,"$18.75",,,"Total Cost:",,"$18.75"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+1,"5V to +-12V DC to DC","VASD1-S5-D12-SIP","102-1340-ND","CONVERTER DC/DC +/-12V OUT +5V IN 1W","IC1","$5.58","$5.58"
+,,,,,,,

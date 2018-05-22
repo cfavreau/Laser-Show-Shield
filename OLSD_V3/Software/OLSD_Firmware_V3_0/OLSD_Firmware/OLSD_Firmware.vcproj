@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="OLSD_Firmware"
+	ProjectGUID="{24F1DFC7-DA18-43A6-AE15-6712EDDA173D}"
+	RootNamespace="OLSD_Firmware"
+	Keyword="MakeFileProj"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="make olsd.hex"
+				ReBuildCommandLine="make rebuild"
+				CleanCommandLine="make clean"
+				Output="olsd.hex"
+				PreprocessorDefinitions="WIN32;_DEBUG"
+				IncludeSearchPath="C:\WinAVR-20100110\avr\include"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="make olsd.hex"
+				ReBuildCommandLine="make rebuild"
+				CleanCommandLine="make clean"
+				Output="olsd.hex"
+				PreprocessorDefinitions="WIN32;NDEBUG"
+				IncludeSearchPath="C:\WinAVR-20100110\avr\include"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\OLSD.c"
+				>
+			</File>
+			<File
+				RelativePath=".\spi.c"
+				>
+			</File>
+			<File
+				RelativePath=".\switch.c"
+				>
+			</File>
+			<File
+				RelativePath=".\timer.c"
+				>
+			</File>
+			<File
+				RelativePath=".\usart.c"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\spi.h"
+				>
+			</File>
+			<File
+				RelativePath=".\standard.h"
+				>
+			</File>
+			<File
+				RelativePath=".\switch.h"
+				>
+			</File>
+			<File
+				RelativePath=".\test_frames.h"
+				>
+			</File>
+			<File
+				RelativePath=".\timer.h"
+				>
+			</File>
+			<File
+				RelativePath=".\usart.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+		<File
+			RelativePath=".\Makefile"
+			>
+		</File>
+		<File
+			RelativePath=".\readme.txt"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

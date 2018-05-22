@@ -1,0 +1,183 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\OLSDTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OLSDTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OLSDTEST_DIALOG DIALOGEX 0, 0, 287, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "OLSD Test Facility"
+FONT 8, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Connect",IDC_CONNECT_BUTTON,7,16,50,14
+    PUSHBUTTON      "Output",IDC_OUTPUT_BUTTON,7,34,50,14
+    COMBOBOX        IDC_TESTPATTERNS_COMBO,63,34,82,98,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_INFO_STATIC,60,19,215,8
+    COMBOBOX        IDC_KPPS_COMBO,158,34,37,92,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "At",IDC_STATIC,147,37,8,8
+    LTEXT           "kpps",IDC_STATIC,197,37,16,8
+    PUSHBUTTON      "Stop",IDC_STOP_BUTTON,224,34,50,14
+    CONTROL         "Enable Red",IDC_ENABLERED_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,55,54,10
+    CONTROL         "Enable Green",IDC_ENABLEGREEN_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,67,60,10
+    CONTROL         "Enable Blue",IDC_ENABLEBLUE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,79,55,10
+    CONTROL         "Invert X",IDC_INVERTX_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,55,42,10
+    CONTROL         "Invert Y",IDC_INVERTY_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,67,42,10
+    CONTROL         "Swap XY",IDC_SWAPXY_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,79,45,10
+    CONTROL         "",IDC_BRIGHTNESS_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,181,70,100,15
+    LTEXT           "Brightness:",IDC_STATIC,125,70,37,8
+    LTEXT           "Max",IDC_STATIC,261,57,14,8
+    LTEXT           "Min",IDC_STATIC,183,57,12,8
+    CONTROL         "Monochrome",IDC_MONO_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,90,57,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "OLSDTest.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "OLSDTest.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OLSDTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\OLSDTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
